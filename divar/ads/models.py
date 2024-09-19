@@ -15,7 +15,7 @@ class Ad(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User , on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
-    city = models.CharField()
+    city = models.CharField(max_length=10)
     caption = models.TextField()
     imidietly = models.BooleanField(default = False)
     image = models.ImageField(upload_to='ads/' , blank=True , null= True)

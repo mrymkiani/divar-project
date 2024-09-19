@@ -3,4 +3,7 @@ from django.urls import path
 urlpatterns = [
     path("MyAds", MyAds.as_view()),
     path("EditAds/<int:pk>", EditAd.as_view()),
-    path("ViewAds", ViewAd.as_view()),]
+    path("ViewAds", ViewAd.as_view()),
+    path ('login/' , login.as_view()) ,
+    path ('refresh/' , refresh.as_view()) ,
+    ]
