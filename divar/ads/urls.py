@@ -6,6 +6,7 @@ urlpatterns = [
     path("ViewAds", ViewAd.as_view()),
     path ('login/' , login.as_view()) ,
     path ('refresh/' , refresh.as_view()) ,
+<<<<<<< HEAD
 
     path('reviews/', ReviewViewSet.as_view({'get': 'list', 'post': 'create'}), name='review-list-create'),
     path('reviews/<int:pk>/', ReviewViewSet.as_view({'get': 'retrieve', 'put': 'update', 'delete': 'destroy'}), name='review-detail'),
@@ -19,3 +20,6 @@ urlpatterns = [
     path('notifications/', NotificationViewSet.as_view({'get': 'list', 'post': 'create'}), name='notification-list-create'),
     path('notifications/<int:pk>/', NotificationViewSet.as_view({'get': 'retrieve', 'put': 'update', 'delete': 'destroy'}), name='notification-detail'),
 ]
+=======
+    ]
+>>>>>>> 2908150b93fe6c7e4255bc955da488d5bab21975
